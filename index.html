@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Visualization Critique & Redesign</title>
+
+    <!-- Milligram CSS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+
+    <!-- You CSS rules-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Load Javascript files -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.1.1/d3.min.js"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3-fetch@3"></script>
+    <!-- Your code -->
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1 style="margin-top:3%">Visualization Critique & Redesign</h1>
+    <h2 style="text-align:center; margin-top:5%; margin-bottom:2%">The <strong>Good</strong></h2>
+    
+    <div class="container">
+      <div class="row">
+        <h2>
+          Gender Pay Gap in the US
+        </h2>
+      </div>
+      <div class="row" style="margin-top:5%">
+        <div class="column">
+          <div class="container">
+            <img src=https://cdn.glitch.com/f70acfac-03ee-4d5a-b68a-5ba595cda8e6%2Fwage_gap.png?v=1632791175573/><br>
+            <a src="https://informationisbeautiful.net/visualizations/gender-pay-gap/">Information is Beautiful</a>
+          </div>
+        </div>
+        <div class="column">
+          <p>
+            <strong>Marks:</strong> Point encodes the salary and line encodes the salary difference<br>
+            <strong>Channels:</strong> The horizontal positioning encodes the salary amount, size
+            encodes the magnitude of difference in salary, and color encodes the gender associated with
+            the salary
+          </p>
+          <p>
+            <strong>Who is the audience?</strong><br>
+            This is widely relevant data as most people work in these industries 
+            and are probably interested in learning the income disparity between 
+            men and women in their industry or even just learning about what the 
+            average pay looks like in a particular industry. This data would also 
+            be of particular interest to working women, women in general, and people 
+            who are passionate or curious about women’s rights or socioeconomic issues. 
+          </p>
+          <p>
+            <strong>
+              What message and questions does this visualization convey and answer?
+            </strong><br>
+            This visualization addresses one primary question: what does the pay gap look
+            like in different roles in the US? It examines the pay gap across specific 
+            industries and roles by looking at sex-segregated data of average income, revealing
+            that while certain roles have more comparable levels of salary between the two genders, 
+            men are paid more than women on average in the US in the same role across different jobs and industries. 
+            It also highlights which roles and industries are more women-friendly, and 
+            which ones are not as progressive.
+          </p>
+          <p>
+            <strong>What data is encoded in the visualization?</strong><br>How much men and
+            women get paid on average, respectively, in a particular industry, and
+            what the difference is between their salaries.
+          </p>
+          <p>
+            <strong>What tasks do readers perform on the visualization?</strong><br>
+            Readers can compare the difference in income between women and men working
+            in the same industry.
+          </p>
+          <p>
+            <strong>How are the five principles applied to this visualization?</strong><br>
+            <strong>Truthful:</strong> This visualization is straightforward and not misleading. 
+            The labels for position and salary are clear; the salaries start at 
+            0 and go up to 120 which captures a comprehensive picture of the range 
+            of salaries and the horizontal axis that represents salary goes up in 
+            consistent increments of 10. The scale seems to be accurate because 
+            the horizontal axis is labeled and the salary is clearly denoted to be 
+            in the thousands. The graph has a simple but clear title and credits its sources. 
+            <strong>Functional:</strong> It makes effective use of visual encodings to convey its messages.  
+            The color not only adds a visually pleasing element but is also effective and 
+            efficient at conveying what represents women’s vs men’s salaries and giving 
+            a visual representation of the difference between them. It is simple and easy 
+            to interpret so that anyone could understand the visualization at a glance. 
+            <strong>Beautiful:</strong> Although, it's not particularly vivid or memorable, the 
+            chart is very simple and aesthetically pleasing because it is  
+            minimalist with some pops of color. There is no chart junk cluttering the space. 
+            <strong>Insightful:</strong> It effectively answers the questions that we have and reveals which 
+            industries have bigger pay gaps.
+            <strong>Enlightening:</strong> This highlights an important and relevant socioeconomic issue. 
+            Seeing as how the number of working women is rising and a significant percentage 
+            of households are dual-income with women contributing financially now more than 
+            ever, this visualization is very informative. It highlights which industries are 
+            more progressive and women-friendly, which can help shape how people view certain 
+            industries or even shape their career choices. It also might bring about further 
+            questions regarding the social implications of women facing discrimination in the 
+            workplace. 
+          </p>
+          <p>
+            <strong>Why is this visualization good?</strong><br>
+            The visualization is good because it meets all of the principles of good design. 
+            It is not only aesthetically pleasing because of
+            its minimalist style but it is also effective at communicating the message. It is 
+            insightful because it answers the question it aims to address and meets the. It 
+            conveys a very powerful message about something that is important and has significant 
+            societal impact. It credits reliable sources and has clear labeling and scaling, 
+            maintaining graphical integrity and truthful portrayal of the data. 
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <h2>
+          Where to Find Jeopardy! Daily Doubles
+        </h2>
+      </div>
+      <div class="row" style="margin-top:5%">
+        <div class="column">
+          <div class="container">
+            <img src=https://cdn.glitch.com/f70acfac-03ee-4d5a-b68a-5ba595cda8e6%2Fjeopardyviz.png?v=1632856302112/>
+            <br>
+            <a target="_blank" href="https://flowingdata.com/2015/03/03/where-to-find-jeopardy-daily-doubles/">FlowingData</a>
+          </div>
+        </div>
+        <div class="column">
+          <p>
+            <strong>Marks:</strong> The boxes are used as areas of the exact same size mark.<br>
+            <strong>Channels:</strong> The color opacity and position of each percentage are used as channels.
+          </p>
+          <p>
+            <strong>Who is the audience?</strong><br>
+            The audience is people interested in Jeopardy! and the frequency of Daily Doubles in certain locations. This visualization
+            could also be helpful for individuals that are playing on Jeopardy!, in order to create a strategy of hitting Daily Doubles 
+            at certain points of the game.
+          </p>
+          <p>
+            <strong>
+              What message and questions does this visualization convey and answer?
+            </strong><br>
+            The visualization conveys the frequency of Daily Doubles in certain positions of the Jeopardy! board over 31 seasons.
+            It answers the question of which clue positions most frequently feature the hidden Daily Double component of the game.
+            
+          </p>
+          <p>
+            <strong>What data is encoded in the visualization?</strong><br>
+           The visualization counts the number of Daily Doubles that appear in each 
+            position of the game board over the course of 31 seasons, producing a percentage
+            of the total number of Daily Doubles per board location from those seasons.
+          </p>
+          <p>
+            <strong>How does the visualization encode the data?</strong><br>
+            The data is encoded with percentages and the opacity of the purple in each clue position, 
+            providing two ways to read the data from the visualization. 
+          </p>
+          <p>
+            <strong>What tasks do readers perform on the visualization?</strong><br>
+            Readers can compare percentages of Daily Doubles in each position on the board by looking at either 
+            percentages or the opacity of the section. Readers can also easily identify extremes by looking at the
+            opacity of the purple in each area of the board. 
+          </p>
+          <p>
+            <strong>How are the five principles applied to this visualization?</strong><br>
+            <strong>Truthful:</strong> The visualization is truthful because it includes a gif that shows how 
+            the percentages were calculated, as it shows how the Daily Doubles are tallied over the 31 seasons.
+            The number is then divided by the total number of Daily Doubles in the past 31 seasons, shown at the
+            bottom of the visualization to get the percentage of Daily Doubles in each clue position on the Jeopardy! board.
+            The highest percentages have the darkest colors, and vice versa, so the graph accurately portrays opacity and percentage information.
+            <strong>Functional:</strong> The visual is functional because it clearly answers the question of “where do 
+            Daily Doubles most frequently occur on the Jeopardy! board?”. The percentages allow readers to easily identify
+            the most/least frequent positions and percentages in each position of the board. It uses the position of each
+            percentage to relate exactly to the actual Jeopardy! board used in the game.
+            <strong>Beautiful:</strong> The visual is beautiful because it uses a purple color to easily allow for comparison
+            between sections, with each section clearly defined by bold black lines to separate the color fields. The visual 
+            also takes the same shape as the Jeopardy! board, which is aesthetically useful for the purpose of the visual.
+            <strong>Insightful:</strong> The visual is insightful because it allows the reader to make conclusions about 
+            what rows/columns have the most/least frequent chances of featuring a Daily Double on the Jeopardy! board.
+            <strong>Enlightening:</strong> The visual is enlightening because the reader is presented with conclusions 
+            from the visual that they would not have come up with otherwise. Without this visual, it would be very difficult
+            to determine which clue positions in Jeopardy! have the highest frequency of Daily Doubles. 
+          </p>
+          <p>
+            <strong>Why is this visualization good?</strong><br>
+            Overall, this is a good visualization. The visualization clearly depicts the frequency of Daily Doubles
+            in certain clue positions over 31 seasons of Jeopardy!. The shape of the visual clearly allows readers 
+            familiar with the game to view each position of the board and view the percentage of Daily Doubles per position.
+            The opacity of purple adds to the ease of reading the visualization, where readers can compare clue sections and easily
+            identify high/low percentages of Daily Doubles in each position. Readers can also draw conclusions from this visualization, 
+            such as that the fourth row of the Jeopardy board has the highest frequency of Daily Doubles. It is a useful graphic for 
+            people interested in Jeopardy! gameplay and the frequency of “random” Daily Doubles on the board.
+          </p>
+        </div>
+        </div>
+      </div>
+    
+    
+    <div class="container">
+      <div class="row">
+        <h2>
+          How A Child Spends A Day
+        </h2>
+      </div>
+      <div class="row" style="margin-top:5%">
+        <div class="column">
+          <div class="container">
+            <img src=https://cdn.glitch.com/f70acfac-03ee-4d5a-b68a-5ba595cda8e6%2Fspending%20day.png?v=1632878421763/>
+          </div>
+          <div class="row">
+            <a href = "https://flowingdata.com/2021/09/17/data-visualization-activities-for-kids/">FlowingData</a>
+          </div>
+        </div>
+        <div class="column">
+          <p>
+            <strong>Marks:</strong> The slices encode time spent doing activity.<br>
+            <strong>Channels:</strong> The position encodes the time of the day when an activity is done.  
+            The color encodes what specific activity is being done during the time frame.  
+            Black vs. white is used to encode whether the time is in am or pm.  
+          </p>
+          <p>
+            <strong>Who is the audience?</strong><br>
+            One potential audience for this graphic is a child’s parents who would like to know how their child spent the day.
+          </p>
+          <p>
+            <strong>
+              What message and questions does this visualization convey and answer?
+            </strong><br>
+            This visualization displays what the child was doing at any time during the day and effectively conveys how long the child spent doing a certain activity.
+          </p>
+          <p>
+            <strong>What data is encoded in the visualization?</strong><br>
+            The data encoded in the visualization is the length of time a child spent doing each different activity.  
+            The data also encodes what time the child was doing the activity at. 
+          </p>
+          <p>
+            <strong>How does the visualization encode the data?</strong><br>
+            The visualization encodes the data by using slices of the pie chart to display one hour during the day.  
+            This works well because all slices are the same size so it is easy to compare how long the child spent doing each activity.  
+            The visualization also uses colors to encode the categorical variable of what specific activity the child was doing at a certain time.  
+            In this case, color hues are appropriate because there is no need for a gradient since it is not an ordinal variable.  
+            Finally, the visualization encodes am and pm times by using a black vs white color hue.  
+          </p>
+          <p>
+            <strong>What tasks do readers perform on the visualization?</strong><br>
+            Readers are able to compare the time spent doing each activity by counting the number of slices.  
+            They are also able to easily see that the activity that takes the most time is sleeping because of the color hues. 
+          </p>
+          <p>
+            <strong>How are the five principles applied to this visualization?</strong><br>
+            <strong>Truthful:</strong> This visualization is truthful because of the accuracy of having all slices be the same so it is not misleading by favoring any certain activity.
+            <strong>Functional:</strong> The visualization is functional because of how it is easy to understand and does not confuse the viewer.
+            <strong>Beautiful:</strong> It is beautiful because of the bright colors used in the pie chart which make it more appealing to the eye. 
+            The font of the legend makes it appear as if a child handwrote it on top of the lines so it has a childlike appearance to it. 
+            <strong>Insightful:</strong> The viewer gains insight to how much time the child spends on a certain activity and also knows exactly what time during the day the child did that activity.  
+            <strong>Enlightening:</strong> The visualization enlightens us as to when and how much time is spent on a certain activity as opposed to showing a bar graph which would only show the length of time spent on an activity.   
+          </p>
+          <p>
+            <strong>Why is this visualization good?</strong><br>
+            This visualization is good because it is simple and conveys the daily activities of the child well.  
+            It is easy to understand and does not require much interpretation on the viewers part apart from counting the number of slices the child spent doing an activity.  
+            The labels for the time of day make the visualization even more useful as it gives the viewer a full understanding of the child’s schedule during the day. 
+          </p>
+        </div>
+        </div>
+      </div>
+      
+
+    <h2 style="text-align:center; margin-top:5%; margin-bottom:2%">The <strong>Bad</strong></h2>
+    <div class="container">
+      <div class="row">
+        <h2>
+          The Composition of Honey
+        </h2>
+      </div>
+      <div class="row" style="margin-top:5%">
+        <div class="column">
+          <div class="container">
+            <img src=https://cdn.glitch.com/f70acfac-03ee-4d5a-b68a-5ba595cda8e6%2Fhoney_graph.jpeg?v=1632790230610/>
+            <a src="https://viz.wtf/">Viz WTF</a>
+          </div>
+        </div>
+        <div class="column">
+          <p>
+            <strong>Marks:</strong> Area encodes the amount of a compound present in honey<br>
+            <strong>Channels:</strong> The size of each slice encodes the quantity of a compound
+          </p>
+          <p>
+            <strong>Who is the audience?</strong><br>
+            People who consume honey.
+          </p>
+          <p>
+            <strong
+              >What message and questions does the visualization convey and
+              answer?
+            </strong><br>
+            The primary question that this visualization addresses is: What
+            compounds is honey composed of and in what quantities?
+          </p>
+          <p>
+            <strong>What data is encoded in the visualization?</strong> <br>The compounds
+            that make up honey and their respective quantities are encoded in
+            this visualization
+          </p>
+          <p>
+            <strong>What tasks do readers perform on the visualization?</strong> <br>Readers
+            are able to compare the different quantities of compounds that make
+            up honey.
+          </p>
+          <p>
+            <strong>Why is this visualization bad?</strong><br>First and foremost, the
+            visualization is bad because it is not truthful. The angles and
+            portions of the pie chart are not proportional to the actual
+            quantity that each slice is supposed to represent. For example, even
+            though fructose and sucrose are supposed to make up 38.5% and 37.1%
+            of honey, respectively, the slice that represents fructose makes up
+            almost twice the amount of area that sucrose does. It does not
+            credit the source that it got its data from so we cannot be sure
+            that this information is credible or not, and it is also not very
+            enlightening as it does not really answer any important questions or
+            have any implications of real significance.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="text-align:left; margin-left:12%">Redesigns</h3>
+    <div class="container" style="margin:auto">
+      <div class="row">
+        <h5>Redesign #1</h5>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="container">
+            <img src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSI9e3mmaXc-uqtBedOZwrpAcSprEgF3m7tjEIKZkLfhexU7VLqz85G8ewEOaWESgFOk0PlAqcUzzNn/pubchart?oid=1951377120&format=image" />
+          </div>
+        </div>
+        <div class="column">
+          <strong>Marks:</strong> Area encodes the amount of a compound present in honey<br>
+          <strong>Channels:</strong> The size and angle of each slice encodes the quantity of a compound<br>
+          <p><strong>Analysis:</strong> This is a re-designed pie chart that is more accurate. I think that this is the best 
+          visualization I produced because like the original visualization, it's visually pleasing 
+          and easy to understand but addresses the main issue of graphical integrity. Here, we see that glucose (38.5%) 
+          and fructose (37.1%) are much more closer in terms of area and angle on the pie chart, and the other values
+          are also more accurately represented</p>
+        </div>
+      </div>
+      <div class="row">
+        <h5>Redesign #2</h5>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="container">
+            <img src="https://cdn.glitch.com/f70acfac-03ee-4d5a-b68a-5ba595cda8e6%2Fhoney_bar_chart.png?v=1632779060571" />
+          </div>
+        </div>
+        <div class="column">
+          <strong>Marks:</strong> Lines encode the quantity of  each compound<br>
+          <strong>Channels:</strong> The horizontal positioning and length encodes amount; color encodes the compound
+          <p><strong>Analysis: </strong>This is a bar chart that represents the quantity values in the bars.
+            Though it is more truthful than the original visualization, this visualization is not 
+          as intuitive as a pie chart. For example, a reader would intuitively know that a pie chart is comprehensive 
+          and incorporates all possibilities whereas a bar chart does not necessarily encompass all possibilities. </p>
+        </div>
+      </div>
+      <div class="row">
+        <h5>Redesign #3</h5>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="container">
+            <img src="https://cdn.glitch.com/f70acfac-03ee-4d5a-b68a-5ba595cda8e6%2Fhoney_tree_map.png?v=1632790805812" />
+          </div>
+        </div>
+        <div class="column">
+          <strong>Marks:</strong> Area encodes the amount of a compound present in honey<br>
+          <strong>Channels:</strong> The size of each rectangle encodes the quantity of a compound; color encodes the type of compound<br>
+          <p><strong>Analysis: </strong>This is a tree map, which is visually similar to the pie chart. However, redesign #1 is easier to read 
+            and easier to compare the relative sizes of each slice because the slices are closer together, as opposed to the tree map where it's not as easy
+            to compare the area of fructose and glucose because they are farther apart. 
+        </div>
+      </div>
+    </div>
+    <br>
+    
+    <div class="container">
+      <div class="row">
+        <h2>
+          Biggest COVID-19 Worries
+        </h2>
+      </div>
+      <div class="row" style="margin-top:5%">
+        <div class="column">
+          <div class="container">
+            <img src=https://cdn.glitch.com/f70acfac-03ee-4d5a-b68a-5ba595cda8e6%2Fcovid19fearviz.png?v=1632860399181/>
+            <br>
+            <a target="_blank" href="https://www.vislies.org/2020/gallery/#more-than-a-whole">VisLies</a>
+          </div>
+        </div>
+        <div class="column">
+          <p>
+            <strong>Marks:</strong> The pie chart areas are the marks used. <br>
+            <strong>Channels:</strong> The pie chart uses size/area and color to convey the sizes and separate the percentages.
+          </p>
+          <p>
+            <strong>Who is the audience?</strong><br>
+            The audience is people watching the WCVB channel.
+          </p>
+          <p>
+            <strong
+              >What message and questions does this visualization convey and
+              answer?
+            </strong><br>
+            The visualization addresses worries caused by the Covid-19 pandemic of some people. 
+          </p>
+          <p>
+            <strong>What data is encoded in the visualization?</strong> <br>
+            The data depicts percentages of either one group of people or multiple that express different concerns. 
+          </p>
+          <p>
+            <strong>How does the visualization encode the data?</strong> <br>
+            The visualization places the three percentages into a pie chart, in an effort to compare the sizes of different fears from Covid-19.
+          </p>
+          <p>
+            <strong>What tasks readers perform on the visualization (e.g., identify extremes, compare values, seeing trends)?</strong>
+            Readers are comparing the sizes of different sections of the pie chart, therefore comparing the amount of people that fear certain outcomes of the Covid-19 pandemic. 
+          </p>
+          <p>
+            <strong>How are the five principles applied to this visualization?</strong><br>
+            <strong>Truthful:</strong> It is not truthful, as the percentages of the circle add up to more than 100% and the angles of the different sections are very inaccurate for the percentages they represent. 
+            <strong>Functional:</strong> It is functional, despite the color selections being very similar to one another. For the most part, it is easy to read as a visual.
+            <strong>Beautiful:</strong>  The graph is beautiful, with clean outlines of each section and bright colors. The colors also go well together.
+            <strong>Insightful:</strong> The graph is not insightful, as it is very confusing as to where the data for these percentages was obtained and the inaccurate section sizes do not allow the audience to draw meaningful conclusions.
+            <strong>Enlightening:</strong> The graph is somewhat enlightening, giving the audience an idea of a percentage of people that fear certain outcomes of the pandemic. 
+          </p>
+          <p>
+            <strong>Why is this visualization bad?</strong><br>
+            This visualization is ultimately bad because it completely misuses the concept of a pie chart.
+            A pie chart should always have the sum of its section percentages equal 100%, while this chart adds up to 178%. 
+            Additionally, since the percentages add up to more than 100%, it is unclear whether some of these sections overlap 
+            or if the data is based on the same group of people at all. The colors of the graph are very similar, which do not 
+            allow for a clear distinction between each section and fear. Furthermore, the incorrect sizes of each section proportional 
+            to 100% does not allow for the audience to draw meaningful conclusions from the comparison of these sections.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <h3 style="text-align:left; margin-left:12%">Redesigns</h3>
+    <div class="container" style="margin:auto">
+      <div class="row">
+        <h5>Redesign #1</h5>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="container">
+            <img src="https://cdn.glitch.com/f70acfac-03ee-4d5a-b68a-5ba595cda8e6%2Fbadviz-redesign2.png?v=1632870820564" />
+          </div>
+        </div>
+        <div class="column">
+          <strong>Marks:</strong> Line encodes the percentage amount of each worry<br>
+          <strong>Channels:</strong> The length and area of each bar denotes the percentage size<br><br>
+          <p><strong>What design choices and visual encodings did you use?</strong>
+            I used a bar chart that displays the percentages of the group of people interviewed about their different COVID-19 fears.</p>
+          <p>
+            <strong>How does your redesign compare with the original?</strong>
+            It is much more clear what percentage of people fear each potential outcome of COVID-19 
+            in their lives, with the ability to compare between the sizes of percentages more easily. 
+          </p>
+          <p>
+            <strong>Why and where do you think your redesign improves upon the original?</strong>
+            It proportionally displays the percentages of people in each group, allowing for readers
+            to more accurately compare the two. It is lacking in definition of data and detailing whether
+            the percentages overlap within the same group of people interviewed, but this information was not provided. 
+          </p>
+          <p>
+            <strong>What trade-offs and compromises did you make? Remember there is rarely a one-size-fits-all design.</strong>
+            The bar chart might be slightly less beautiful and appealing than the pie chart visually, but I think it is much 
+            more functional and insightful than the pie chart option. The bar chart functions well as one succinct chart that 
+            displays the necessary info in a proportional manner.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <h5>Redesign #2</h5>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="container">
+            <img src="https://cdn.glitch.com/f70acfac-03ee-4d5a-b68a-5ba595cda8e6%2Fpieredesign1.png?v=1632870820497" />
+            <img src="https://cdn.glitch.com/f70acfac-03ee-4d5a-b68a-5ba595cda8e6%2Fpieredesign2.png?v=1632870820679" />
+            <img src="https://cdn.glitch.com/f70acfac-03ee-4d5a-b68a-5ba595cda8e6%2Fpieredesign3.png?v=1632870820695" />
+          </div>
+        </div>
+        <div class="column">
+          <strong>Marks:</strong> Area encodes the percentage amount<br>
+          <strong>Channels:</strong> The area/size of each pie slice denotes the percentage size.
+          <p><strong>Analysis: </strong> This is a series of three pie charts that uses the same pie chart style as the original graph,
+            but uses pie charts correctly to depict the data. Since the three percentages overlap and don't add to 100%, each one can 
+            only be accurately depicted in one pie chart each.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <h5>Redesign #3</h5>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="container">
+            <img src="https://cdn.glitch.com/f70acfac-03ee-4d5a-b68a-5ba595cda8e6%2Fbadviz-redesign1.png?v=1632870820497" />
+          </div>
+        </div>
+        <div class="column">
+          <strong>Marks:</strong> Area of each sequence of icons encodes the percentage<br>
+          <strong>Channels:</strong> The area/size of each group of people denotes the percentage<br>
+          <p><strong>Analysis: </strong>This is a bar chart using icons instead of bars to denote the percentages of each worry in the group surveyed.
+            It converts the percentages into the number of people out of 10 that fear each item in the y-axis.
+        </div>
+      </div>
+    </div>
+    <br>
+    
+    
+    <div class="container">
+      <div class="row">
+        <h2>
+          Job Losses During COVID-19
+        </h2>
+      </div>
+      <div class="row" style="margin-top:5%">
+        <div class="column">
+          <div class="container">
+            <img src=https://cdn.glitch.com/f70acfac-03ee-4d5a-b68a-5ba595cda8e6%2Fbad%20chart%20ryan.png?v=1632878459927/>
+          </div>
+          <div class="row">
+            <a href = "http://www.thefunctionalart.com/">Functional Art</a>
+          </div>
+        </div>
+        <div class="column">
+          <p>
+            <strong>Marks:</strong> The line mark encodes the change from the previous month in nonfarm payrolls in the United States. <br>
+            <strong>Channels:</strong> The position channel encodes the year.
+          </p>
+          <p>
+            <strong>Who is the audience?</strong><br>
+            The audience is the general public who are looking to understand information about the May 2020 jobs report and what it indicates for the US economy.
+          </p>
+          <p>
+            <strong
+              >What message and questions does this visualization convey and
+              answer?
+            </strong><br>
+            This visualization conveys that there was a sharp decrease in change in nonfarm payrolls in April 2020 but also a sharp increase in May 2020.  
+            It also conveys that from 2015 to 2020, there were mostly small increases in the change in nonfarm payrolls.     
+          </p>
+          <p>
+            <strong>What data is encoded in the visualization?</strong> <br>
+            The data encoded is the change in nonfarm payrolls from the previous month in the United States. 
+          </p>
+          <p>
+            <strong>How does the visualization encode the data?</strong> <br>
+            The visualization encodes the data by using a line graph to show how the data varies over time. 
+            In addition, data labels are used on the two most recent data points, April 2020 and May 2020 to help identify those as outliers. 
+          </p>
+          <p>
+            <strong>What tasks readers perform on the visualization (e.g., identify extremes, compare values, seeing trends)?</strong>
+            Readers can easily identify the extreme values they see in April 2020 and May 2020, which are obvious because of the scale used to display the y-axis.  
+            It is difficult to compare values for any other time period, as the rest of the data seems to be almost a straight line, again because of the scale used for the y-axis. 
+          </p>
+          <p>
+            <strong>How are the five principles applied to this visualization?</strong><br>
+            <strong>Truthful:</strong> This visualization can be misleading because it displays the change in jobs, so when we see positive 2.5M jobs in May, that is only the increase from the 20.7M lost in April. 
+            <strong>Functional:</strong> The visualization is not perfectly functional because of the scale of the y-axis and how it is hard to decipher the values of every data point besides April 2020 and May 2020. 
+            <strong>Beautiful:</strong>  It has some beauty because of the blue used for the line, but the chart is not very beautiful other than that. 
+            <strong>Insightful:</strong> The insight that the viewer is led to believe is that jobs are doing even better in May 2020 than they were before April 2020.  
+            However, this is not true since it is only the increase from the previous month, so jobs are still 18.2M below what they were in March 2020 (-20.7 + 2.5 = -18.2).
+            <strong>Enlightening:</strong> The visualization enlightens us about the increase in jobs in May 2020, and at least lets us know that the downward trend of April 2020 did not continue into May 2020. 
+          </p>
+          <p>
+            <strong>Why is this visualization bad?</strong><br>
+            This visualization is not the best because of how it is misleading viewers into thinking jobs are above their March 2020 levels, when really jobs are still far below their historical norms.  
+            In addition, the scale of the y-axis makes it hard to understand the other data points and what changes are occurring during 2015 - 2020.  
+            Finally, the chart also fails to go back to another period of recession, so the time period displayed by the chart is misleading as it was a historically strong period for jobs growth.  
+            The chart would be more informative if they compared the data points in April and May 2020 to another recession so that viewers could have better context.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <h3 style="text-align:left; margin-left:12%">Redesigns</h3>
+    <div class="container" style="margin:auto">
+      <div class="row">
+        <h5>Redesign #1</h5>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="container">
+            <img src="https://cdn.glitch.com/f70acfac-03ee-4d5a-b68a-5ba595cda8e6%2Fryan%20actual%20redesign%201.png?v=1632878473800" />
+          </div>
+        </div>
+        <div class="column">
+          <strong>Marks:</strong> The line encodes the monthly change in nonfarm payrolls in the United States.  
+          In addtion, the shaded area shows the period during which the United States was in a recession.<br>
+          <strong>Channels:</strong> The position channel encodes the year.
+          <p><strong>Analysis: </strong> The shaded area allows the viewer to understand the economic context of the time period to help provide a potential explanation for the sharp decrease in jobs.
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <h5>Redesign #2</h5>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="container">
+            <img src="https://cdn.glitch.com/f70acfac-03ee-4d5a-b68a-5ba595cda8e6%2Fryan%20redesign%201.png?v=1632878466255"/>
+          </div>
+        </div>
+        <div class="column">
+          <strong>Marks:</strong> The line encodes the number of nonfarm payrolls in the United States.  
+          The shaded area shows the period during which the United States was in a recession.<br>
+          <strong>Channels:</strong> The position channel encodes the year on the x-axis. <br><br>
+          <p><strong>What design choices and visual encodings did you use?</strong>
+            I included a shaded area on the line chart to indicate when the economy was in a recession.  
+            I also changed the units being used on the y-axis so that instead of the change in jobs, 
+            it shows the actual number of jobs so that the viewer can more easily understand how COVID has impacted jobs in the US and that job levels are not yet back to their pre-pandemic levels. </p>
+          <p>
+            <strong>How does your redesign compare with the original?</strong>
+            My redesign uses the same time period as the original but different units on the y-axis.  
+            In addition, I think the shading helps the viewer understand the economic context that is driving the sharp decrease in jobs. 
+          </p>
+          <p>
+            <strong>Why and where do you think your redesign improves upon the original?</strong>
+            My redesign improves upon the original by making it easier to understand the current level of payrolls as of May 2020
+            and does not mislead viewers into thinking job levels have already rebounded fully. 
+          </p>
+          <p>
+            <strong>What trade-offs and compromises did you make? Remember there is rarely a one-size-fits-all design.</strong>
+            One trade-off I had to make is that it is now harder to understand the change from month to month in payrolls.  
+            I think this is worth it though because we are more concerned about the bigger picture of US job levels than trying to find out what the change was over the short term period of the past two months. 
+          </p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <h5>Redesign #3</h5>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="container">
+            <img src="https://cdn.glitch.com/f70acfac-03ee-4d5a-b68a-5ba595cda8e6%2Fryan%20redesign%203.png?v=1632878477870" />
+          </div>
+        </div>
+        <div class="column">
+          <strong>Marks:</strong> The line encodes the monthly change in nonfarm payrolls in the United States.  
+          The shaded area shows the period during which the United States was in a recession.<br>
+          <strong>Channels:</strong> The position channel encodes the year.<br>
+          <p><strong>Analysis: </strong>The x-axis has been extended further back in time to show the 2008 recession as well.
+            This allows the viewer to compare the job loss during the last recession to the job loss being experienced in 2020.
+            The ability to compare data to a similar historical time period gives the viewer enough context to draw conclusions about how serious the job loss experienced in 2020 was.
+          </p>
+        </div>
+      </div>
+    </div>
+    <br>
+    
+    
+  </body>
+</html>
