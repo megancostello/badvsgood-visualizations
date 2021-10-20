@@ -1,6 +1,6 @@
 # Comparing Bad & Good Visualization Designs Project
 
-megancostello.github.io/badvsgood-visualizations
+https://megancostello.github.io/badvsgood-visualizations/
 
 ## You built this with Glitch!
 
